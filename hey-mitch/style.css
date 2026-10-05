@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            #ffdce9 0%,
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 10%,
+            #f8cddd 0%,
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 15% 90%,
+            #f7cada 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            #ffe2ed 0%,
+            transparent 35%
+        ),
+        #fceaf1;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================
+   MAIN TEXT
+   ========================= */
+
+.container {
+    position: relative;
+
+    z-index: 10;
+
+    text-align: center;
+}
+
+
+.message {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 7vw, 85px);
+
+    font-weight: 600;
+
+    letter-spacing: 6px;
+
+    color: #c94f7c;
+
+    text-shadow:
+        1px 1px 0 rgba(255, 255, 255, 0.8);
+
+    animation: softPop 2.2s ease-in-out infinite;
+}
+
+
+/* Gentle popping */
+
+@keyframes softPop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.035);
+    }
+}
+
+
+/* =========================
+   EMOJIS
+   ========================= */
+
+.emoji {
+    position: absolute;
+
+    z-index: 2;
+
+    user-select: none;
+
+    pointer-events: none;
+
+    animation:
+        float 3.5s ease-in-out infinite;
+}
+
+
+/* =========================
+   INDIVIDUAL POSITIONS
+   ========================= */
+
+.e1 {
+    top: 7%;
+    left: 7%;
+    font-size: 42px;
+    animation-delay: 0s;
+}
+
+.e2 {
+    top: 5%;
+    left: 23%;
+    font-size: 28px;
+    animation-delay: 1s;
+}
+
+.e3 {
+    top: 13%;
+    right: 8%;
+    font-size: 48px;
+    animation-delay: 0.5s;
+}
+
+.e4 {
+    top: 23%;
+    left: 4%;
+    font-size: 32px;
+    animation-delay: 1.5s;
+}
+
+.e5 {
+    top: 28%;
+    right: 18%;
+    font-size: 44px;
+    animation-delay: 0.8s;
+}
+
+.e6 {
+    top: 12%;
+    right: 34%;
+    font-size: 25px;
+    animation-delay: 2s;
+}
+
+.e7 {
+    top: 46%;
+    left: 7%;
+    font-size: 47px;
+    animation-delay: 0.3s;
+}
+
+.e8 {
+    top: 39%;
+    left: 24%;
+    font-size: 26px;
+    animation-delay: 1.2s;
+}
+
+.e9 {
+    top: 51%;
+    right: 7%;
+    font-size: 46px;
+    animation-delay: 1.8s;
+}
+
+.e10 {
+    top: 63%;
+    right: 24%;
+    font-size: 30px;
+    animation-delay: 0.7s;
+}
+
+.e11 {
+    bottom: 11%;
+    left: 11%;
+    font-size: 43px;
+    animation-delay: 1.4s;
+}
+
+.e12 {
+    bottom: 7%;
+    left: 34%;
+    font-size: 25px;
+    animation-delay: 0.4s;
+}
+
+.e13 {
+    bottom: 14%;
+    right: 10%;
+    font-size: 49px;
+    animation-delay: 1.7s;
+}
+
+.e14 {
+    bottom: 28%;
+    right: 34%;
+    font-size: 28px;
+    animation-delay: 0.9s;
+}
+
+.e15 {
+    top: 74%;
+    left: 3%;
+    font-size: 36px;
+    animation-delay: 2s;
+}
+
+.e16 {
+    top: 81%;
+    right: 44%;
+    font-size: 23px;
+    animation-delay: 1.1s;
+}
+
+.e17 {
+    top: 33%;
+    left: 43%;
+    font-size: 34px;
+    animation-delay: 1.6s;
+}
+
+.e18 {
+    top: 70%;
+    right: 4%;
+    font-size: 27px;
+    animation-delay: 0.6s;
+}
+
+.e19 {
+    top: 18%;
+    left: 67%;
+    font-size: 38px;
+    animation-delay: 1.3s;
+}
+
+.e20 {
+    bottom: 20%;
+    left: 55%;
+    font-size: 24px;
+    animation-delay: 1.9s;
+}
+
+
+/* =========================
+   FLOATING ANIMATION
+   ========================= */
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform:
+            translateY(0)
+            rotate(-5deg);
+    }
+
+    50% {
+        transform:
+            translateY(-14px)
+            rotate(5deg);
+    }
+}
